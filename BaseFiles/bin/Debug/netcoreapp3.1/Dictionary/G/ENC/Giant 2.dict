@@ -1,0 +1,4 @@
+// Alias: Giant //
+// Class: Adjective //
+All !X.If !X is giant then !X is big
+All !X.If !X is person and !X is giant then !X is tall

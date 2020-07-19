@@ -1,0 +1,4 @@
+// Alias: Abandon //
+// Class: Verb //
+All !X.All !Y.If !X abandons !Y then !Y will be sad
+All !X.All !Y.If !X abandons !Y then !X is bad

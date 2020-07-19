@@ -1,0 +1,5 @@
+// Alias: Ablaze //
+// Class: Adjective //
+All !X.If !X is on fire then !X is Ablaze
+All !X.If !X is Ablaze then !X is on fire
+All !X.If !X is Ablaze then !X die

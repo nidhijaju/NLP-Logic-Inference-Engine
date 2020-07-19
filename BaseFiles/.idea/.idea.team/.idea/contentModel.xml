@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Neelesh\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Neelesh\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Neelesh\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_team.-276435424.00" t="ExcludeRecursive" />
+    <e p="E:\hlp2020-NLP\team" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Evaluator.fs" t="Include" />
+      <e p="FullStack.fs" t="Include" />
+      <e p="LangDictionary.fs" t="Include" />
+      <e p="ModuleLogicConversion.fs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Parser.fs" t="Include" />
+      <e p="Program.fs" t="Include" />
+      <e p="team.fsproj" t="IncludeRecursive" />
+      <e p="team.sln" t="IncludeFlat" />
+      <e p="TypesShared.fs" t="Include" />
+    </e>
+  </component>
+</project>

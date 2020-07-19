@@ -1,0 +1,3 @@
+// Alias: Punch //
+// Class: Verb //
+All !X.All !Y.If !X punchs !Y then !X is angry

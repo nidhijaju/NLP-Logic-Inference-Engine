@@ -1,0 +1,4 @@
+// Alias: Ice //
+// Class: Noun //
+All !X.If !X is in ice then !X is cold
+All !X.If !X is water and !X is cold then !X is ice

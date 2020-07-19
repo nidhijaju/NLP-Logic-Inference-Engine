@@ -1,0 +1,5 @@
+// Alias: Adhesive //
+// Class: Chemical //
+All Adhesives are sticky
+All Adhesives form a Chemical Bond
+All !X.All !Y.If !X has an Adhesive to !Y then !X is stuck to !Y

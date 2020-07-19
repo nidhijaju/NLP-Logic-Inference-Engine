@@ -1,0 +1,3 @@
+// Alias: Affect //
+// Class: Verb //
+All !X.All !Y.If !X Affects !Y then !X changes !Y

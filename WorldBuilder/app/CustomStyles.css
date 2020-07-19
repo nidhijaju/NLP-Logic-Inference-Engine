@@ -1,0 +1,14 @@
+﻿.nonParse {
+    text-decoration-line: underline;
+    text-decoration-color: #ff252a;
+}
+.goodParse {
+    text-decoration-line: underline;
+    text-decoration-color: #5bff64;
+}
+.parseBox{
+    padding: 25px;
+}
+.parseBoxSuccess{
+    color: chartreuse;
+}

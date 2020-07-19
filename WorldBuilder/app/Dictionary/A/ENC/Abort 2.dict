@@ -1,0 +1,4 @@
+// Alias: Abort //
+// Class: Verb //
+If !X is Abort then !X is <not-complete>
+If !X Aborts !Y then !X stop !Y

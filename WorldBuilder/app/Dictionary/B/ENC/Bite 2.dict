@@ -1,0 +1,5 @@
+// Alias: Bite //
+// Class: Verb //
+All !X.All !Y.If !X bites !Y then !X hates !Y
+All !X.All !Y.If !X bites !Y and !Y is a banana then !X has power
+ 

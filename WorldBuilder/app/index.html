@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Logic Engine</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="PossibleLogo-01.png" sizes="32x32" />
+    <link rel="shortcut icon" type="image/png" href="LogoSmall16x16-01.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CustomStyles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    /* Icon columns */
+        
+        #explorer tr th:nth-child(1) {
+            width: 28px;
+        }
+        /* Date columns */
+        
+        #explorer tr th:nth-child(3) {
+            width: 190px;
+        }
+        /* Name cells */
+        
+        #explorer tr td:nth-child(2) {
+            max-width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        #{
+ padding: 25px;
+    }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col">
+                        <form class="form-group" onkeypress="return event.keyCode != 13">
+                            <label for="input-text"><h1 class="display-4"> World Builder</h1></label><br>
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="automatic" value="option1" checked>
+                                            <label class="form-check-label" for="automatic">
+                                                    Automatic
+                                                  </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gridRadios" id="manual" value="option2">
+                                            <label class="form-check-label" for="manual">
+                                                    Manual
+                                                  </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="form-inline">
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-control " type="text" id="input-text" data-toggle="tooltip" data-placement="top" name="input" placeholder="Please enter ground truths here" size="60"><br>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary " id="act-save-text" name="Save">Save Ground Truth</button>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="form-inline">
+                                <div class="row">
+                                    <div class="col">
+                                        <input class="form-control" type="text" id="input-world" name="input" data-toggle="tooltip" data-placement="top" placeholder="Please build your world here" size="60"><br>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary" id="act-save-world" name="Save">Save World</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p>
+                            <button type="button" class="btn btn-secondary mr-1" id="act-submit-text" name="Submit">Submit</button>
+                            <button type="button" class="btn btn-warning" id="act-clear-text"  name="Clear">Clear</button>                            
+                        </p>
+                        <p id="parseColours">
+                            <input class="form-control" id="parseDisplay" type="text" placeholder="Parse results will show here" readonly>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col">
+                <div class="card bg-light mb-3" id="card1">
+                    <h5 class="card-title">Saved Ground Truths</h5>
+                    <table>
+                        <tbody id="ground-truths">
+                            <tr>
+                                <td>No inputs yet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+                <div class="card bg-light mb-3" id="world-title">
+                    <h5 class="card-title">Saved World</h5>
+                    <table>
+                        <tbody id="world">
+                            <tr>
+                                <td>No inputs yet</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="display-6">Output</h4>
+                <table>
+                    <tbody id="output">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="p-3 mb-2 bg-white text-white">
+        <span id="insert" class="p-3 mb-2 bg-white text-white">
+            
+        </span>
+    </div>
+    <div class="p-3 mb-2 bg-white text-white">
+        <span id="cage" class="p-3 mb-2 bg-white text-white">
+            Hello2
+        </span>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+
+</html>

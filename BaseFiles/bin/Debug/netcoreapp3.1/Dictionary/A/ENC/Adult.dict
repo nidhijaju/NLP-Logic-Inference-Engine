@@ -1,0 +1,4 @@
+// Alias: Adult //
+// Class: Occupation //
+All !X.If !X is an Adult then !X isn't a child
+Some Adults are responsible

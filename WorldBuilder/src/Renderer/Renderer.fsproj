@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Html.fs" />
+    <Compile Include="Refs.fs" />
+    <Compile Include="TypesShared.fs" />
+    <Compile Include="LangDictionary.fs" />
+    <Compile Include="Parser.fs" />
+    <Compile Include="ModuleLogicConversion.fs" />
+    <Compile Include="Evaluator.fs" />
+    <Compile Include="FullStack.fs" />    
+    <Compile Include="Mime.fs" />
+    <Compile Include="Renderer.fs" />
+    <Content Include="CustomStyles.css" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+  <ItemGroup>
+    <PackageReference Include="Expecto.FsCheck" Version="8.13.1" />
+  </ItemGroup>
+</Project>
