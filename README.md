@@ -50,7 +50,7 @@ then in a separate terminal:
 
 ### Building the application
 
-Open a terminal in the `.\team\WorldBuilder` folder.
+Open a terminal in the `.\WorldBuilder` folder.
 
 > Install JS dependencies: `npm install` or `yarn install`
 >
